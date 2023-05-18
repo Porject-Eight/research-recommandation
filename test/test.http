@@ -1,0 +1,16 @@
+POST http://localhost:8088/api/user
+Content-Type: application/json
+
+{
+    "Comment": "test",
+    "Labels": [
+        "hsk1",
+        "food",
+        "travel"
+    ],
+    "UserId": "james"
+}
+
+###
+GET http://localhost:8088/api/user/james
+Accept: application/json

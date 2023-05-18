@@ -22,3 +22,19 @@ docker run \
   -d redis:6-alpine \
   redis-server /usr/local/etc/redis/redis.conf
 ```
+
+## install gorse
+
+```bash
+docker run --name gorse-in-one \
+  --network host \
+  -v $(pwd)/config.toml:/etc/gorse/config.toml \
+  -d zhenghaoz/gorse-in-one:latest
+```
+
+## access wsl2 from windows
+
+find wsl2 ip
+```bash
+ip a |grep "global eth0"
+```

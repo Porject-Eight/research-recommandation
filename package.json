@@ -1,0 +1,23 @@
+{
+  "name": "research-recommandation",
+  "version": "1.0.0",
+  "description": "```bash\r docker run --name mysql \\\r   -p 8306:3306 \\\r   -v $(pwd):/var/lib/mysql \\\r   -v /etc/localtime:/etc/localtime \\\r   -e MYSQL_ROOT_PASSWORD=project8 \\\r   -d mysql:8.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/Porject-Eight/research-recommandation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Porject-Eight/research-recommandation/issues"
+  },
+  "homepage": "https://github.com/Porject-Eight/research-recommandation#readme",
+  "dependencies": {
+    "axios": "^1.4.0"
+  }
+}
