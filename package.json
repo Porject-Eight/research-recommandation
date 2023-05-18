@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Porject-Eight/research-recommandation#readme",
   "dependencies": {
-    "axios": "^1.4.0"
+    "axios": "^1.4.0",
+    "moment": "^2.29.4"
   }
 }
