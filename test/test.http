@@ -1,8 +1,13 @@
-GET http://172.25.49.243:8088/api/popular
-
-
-###
-GET http://172.25.49.243:8088/api/recommend/james
+GET http://172.25.51.49:8088/api/popular
 
 ###
-GET http://172.25.49.243:8088/api/popular/word
+GET http://172.25.51.49:8088/api/latest
+
+###
+GET http://172.25.51.49:8088/api/recommend/AceFlash?n=20
+
+###
+GET http://172.25.51.49:8088/api/recommend/DashSpeed?n=20
+
+###
+GET http://172.25.51.49:8088/api/item/554/neighbors
