@@ -1,6 +1,6 @@
 const axios = require('axios')
 
-const url = 'http://172.25.51.49:8088/api/user'
+const url = 'http://172.22.107.42:8088/api/user'
 
 /*
 insert user post http://{wsl-ip}:8088/api/user
@@ -67,7 +67,7 @@ const mockUsers = [
 ]
 
 const gender = ['male', 'female']
-const age = ['adult', 'child', 'adult']
+const age = ['adult', 'child', 'teenager']
 const level = ['hsk1', 'hsk2', 'hsk3']
 const hobby = ['reading', 'travel', 'football', 'music', 'photography']
 const country = ['China', 'United States', 'Japan', 'Korea', 'Australia']
@@ -82,7 +82,7 @@ let insertUser = async(u) => {
       country[Math.floor(Math.random() * country.length)],
     ]
   }
-  let response = await axios.patch(`${url}/${u}`, user)
+  let response = await axios.patch(`${url}/x_${u}`, user)
   if (response.status >= 400) {
     console.log(`generate mock user: ${u} failed, error: ${response.data}`)
   }else{
