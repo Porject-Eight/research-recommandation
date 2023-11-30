@@ -122,7 +122,7 @@ popular_window = "720h"
 #   auto: If a user have labels, neighbors are found by number of common labels.
 #         If this user have no labels, neighbors are found by number of common liked items.
 # The default value is "auto".
-neighbor_type = "similar"
+neighbor_type = "auto"
 
 # Enable approximate user neighbor searching using vector index. The default value is true.
 enable_index = true
@@ -141,7 +141,7 @@ index_fit_epoch = 3
 #   auto: If a item have labels, neighbors are found by number of common labels.
 #         If this item have no labels, neighbors are found by number of common users.
 # The default value is "auto".
-neighbor_type = "similar"
+neighbor_type = "auto"
 
 # Enable approximate item neighbor searching using vector index. The default value is true.
 enable_index = true
@@ -210,7 +210,7 @@ enable_user_based_recommend = true
 enable_item_based_recommend = true
 
 # Enable collaborative filtering recommendation during offline recommendation. The default value is true.
-enable_collaborative_recommend = true
+enable_collaborative_recommend = false
 
 # Enable click-though rate prediction during offline recommendation. Otherwise, results from multi-way recommendation
 # would be merged randomly. The default value is false.
