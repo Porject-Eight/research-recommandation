@@ -192,7 +192,7 @@ read_replacement_decay = 0.6
 [recommend.offline]
 
 # The time period to check recommendation for users. The default values is 1m.
-check_recommend_period = "1m"
+check_recommend_period = "30m"
 
 # The time period to refresh recommendation for inactive users. The default values is 120h.
 refresh_recommend_period = "24h"
